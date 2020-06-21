@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  self-hosted-job:
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
+    name: test
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Test
+      run: |
+        echo test
