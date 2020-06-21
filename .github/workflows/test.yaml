@@ -15,4 +15,4 @@ jobs:
       run: |
         echo test
         docker ps
-        docker run -it --rm ubuntu:latest bash -c 'echo docker test'
+        docker run --rm ubuntu:latest bash -c 'echo docker test'
