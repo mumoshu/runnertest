@@ -16,5 +16,9 @@ jobs:
         echo test
         docker ps
         docker run --rm ubuntu:latest bash -c 'echo docker test'
-        echo $USER
+        echo USER=$USER
+        echo "---"
         cut -d: -f1 /etc/passwd
+        echo "---"
+        whoami
+        id $(whoami)
