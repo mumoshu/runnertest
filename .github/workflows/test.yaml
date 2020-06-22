@@ -22,3 +22,4 @@ jobs:
         echo "---"
         whoami
         id $(whoami)
+        ls -lah /var/run/docker.sock
