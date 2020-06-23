@@ -7,6 +7,7 @@ jobs:
   self-hosted-job:
     #runs-on: ubuntu-latest
     runs-on: self-hosted
+    container: mumoshu/conflint:latest
     name: test
     steps:
     - name: Checkout
